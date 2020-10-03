@@ -17,7 +17,7 @@ def webServer(port=13331):
 
    #Fill in start
 
-   serverSocket.bind(('127.0.0.1',port))
+   serverSocket.bind(("",port))
 
    serverSocket.listen(1)
 
