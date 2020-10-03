@@ -49,7 +49,7 @@ def webServer(port=13331):
 
            #Fill in start
 
-           connectionSocket.send(bytes("HTTP/1.1 200 OK\r\n\r\n","UTF-8"))
+           connectionSocket.send("HTTP/1.1 200 OK\r\n\r\n")
 
            #connectionSocket.send(output)
 
