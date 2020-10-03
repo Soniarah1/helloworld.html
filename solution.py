@@ -1,4 +1,3 @@
-
 #import socket module
 
 from socket import *
@@ -17,7 +16,7 @@ def webServer(port=13331):
 
    #Fill in start
 
-   serverSocket.bind(("", port))
+   serverSocket.bind(("",port))
 
    serverSocket.listen(1)
 
@@ -49,7 +48,7 @@ def webServer(port=13331):
 
            #Fill in start
 
-           connectionSocket.send("HTTP/1.1 200 OK\r\n\r\n")
+           connectionSocket.send("HTTP/1.1 200 OK\r\n\r\n".encode())
 
            #connectionSocket.send(output)
 
@@ -77,7 +76,7 @@ def webServer(port=13331):
 
            #Fill in start
 
-           connectionSocket.send("HTTP/1.1 404 Not Found\r\n\r\n")
+           connectionSocket.send("HTTP/1.1 404 Not Found\r\n\r\n".encode())
 
            #Fill in end
 
